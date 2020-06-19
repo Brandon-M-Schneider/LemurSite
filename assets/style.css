@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .container {
     background-color: rgba(1, 1, 1, 0.85);
     width: 100%;
@@ -16,14 +20,31 @@
     font-size: 20px;
     padding: 15px 0 0 10px;
     width: 70%;
+    font-family: 'Piedra', cursive;
+    font-size: 24px;
+    letter-spacing: 0.5mm;
 }
 
 #list-items > li {
     width: 10%;
     float: left;
     list-style-type: none;
-    padding-top: 16px;
-    margin: 0 2.5% 0 2.5%;
+    line-height: 3.15em;
+    margin: 0 2.5%;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#list-items > li:hover, li > a:hover {
+    background-color: yellow;
+}
+
+li > a:hover {
+    color: black;
 }
 
 #main-container {
@@ -47,9 +68,14 @@
     padding: 100px 2.5% 0 5%;
 }
 
+#aside > h2 {
+    font-size: 24px;
+}
+
 #aside > p {
     margin-top: 10px;
     line-height: 1.5em;
+    font-size: 14px;
 }
 
 #aside > a {
@@ -75,4 +101,34 @@
     width: 250px;
     height: 250px;
     margin: 10px 2.5%;
+}
+
+#about-header {
+    font-size: 24px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#about-lemur {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#break {
+    clear: both;
+    width: 100%;
+    height: 20px;
+}
+
+#about-lemur-2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    overflow: hidden;
 }
